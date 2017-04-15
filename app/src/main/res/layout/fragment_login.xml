@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/login_list_item_roomHelp_login_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="40dp"
+        android:text="@string/login_page_title"
+        android:textSize="30dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/login_list_item_roomHelp_idpw_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/login_list_item_roomHelp_login_title_view"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:orientation="vertical">
+            <!--android:background="#ffdafa"-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="@string/login_id"
+                android:src="@android:drawable/ic_menu_myplaces"
+                android:background="@drawable/edit_text_background"
+                android:scaleType="fitCenter"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:text="@string/login_id"
+                android:src="@android:drawable/ic_secure"
+                android:background="@drawable/edit_text_background"
+                android:scaleType="fitCenter"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:orientation="vertical"
+            >
+            <!--android:background="#ffa"-->
+
+            <com.example.khj.kku_myhome_helper.CustomView.ClearEditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:hint="@string/login_id"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginBottom="5dp"/>
+
+            <com.example.khj.kku_myhome_helper.CustomView.ClearEditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:hint="@string/login_pw"
+                android:background="@drawable/edit_text_background"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_list_item_roomHelp_autologin_LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_list_item_roomHelp_idpw_LinearLayout"
+        android:layout_marginTop="10dp">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.example.khj.kku_myhome_helper.CustomView.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_auto_login"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_list_item_roomHelp_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_page_title"
+        android:layout_below="@+id/login_list_item_roomHelp_idpw_LinearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:id="@+id/login_list_item_roomHelp_gosgin_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/login_list_item_roomHelp_login_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_page_google_login_Bnt"/>
+        <Button
+            android:id="@+id/login_room_roomHelp_sginup_bnt"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_page_sginUp_Bnt"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_page_sloginpw_text"
+        android:layout_below="@+id/login_list_item_roomHelp_login_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView"
+        android:layout_marginLeft="20dp"/>
+</RelativeLayout>

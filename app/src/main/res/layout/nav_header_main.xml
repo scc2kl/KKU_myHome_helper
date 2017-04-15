@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <com.example.khj.kku_myhome_helper.CustomView.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@color/colorPrimary"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:id="@+id/nv_as"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        >
+        <TextView
+            android:id="@+id/nav_header_login_id_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그인을 해주세요"
+            android:textSize="18dp"
+            android:layout_centerInParent="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        <Button
+            android:id="@+id/nav_header_login_id_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="20dp"
+            android:layout_below="@id/nav_header_login_id_text_view"
+            android:text="로그인"/>
+    </RelativeLayout>
+
+</LinearLayout>
